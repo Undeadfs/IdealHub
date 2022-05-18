@@ -1,0 +1,24 @@
+@font-face {
+    font-family: "Exo2";
+    src: url("../landing/fonts/Exo2Regular.ttf");
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../landing/fonts/Exo2Bold.ttf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../landing/fonts/Exo2Italic.ttf");
+    font-style: italic;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../landing/fonts/Exo2Thin.ttf");
+    font-weight: 100;
+}
+@font-face {
+    font-family: "Exo2";
+    src: url("../landing/fonts/Exo2Medium.ttf");
+    font-weight: 600;
+}
