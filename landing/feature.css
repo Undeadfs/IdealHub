@@ -1,0 +1,35 @@
+.features_container__feature {
+    font-family: Exo2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 350px;
+    text-align: center;
+}
+
+.features_container__feature img {
+    margin-bottom: 20px;
+}
+
+.features_container__feature h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.features_container__feature p {
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(132, 132, 132);
+}
+
+@media  screen and (max-width: 900px) {
+    .features_container__feature img {
+        margin-top: 20px;
+    }
+    .features_container__feature {
+        max-width: 100%;
+    }
+}
