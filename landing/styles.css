@@ -1,4 +1,5 @@
 @import url(../landing/fonts.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -11,57 +12,94 @@ html,body {
     height: 100%;
 }
 
-.container {
+.landing-page-wrapper {
     display: flex;
     width: 100%;
     max-width: 1440px;
 }
 
+/* Intro styles */
+
 .intro-container {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    padding: 0 20px;
     width: 100%;
-    height: 600px;
+    max-height: 650px;
 }
 
-.intro-description {
+.description {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    width: 70%;
+    align-items: center;
+    width: 60%;
 }
 
-.intro-description-title {
-    margin-bottom: 10px;
-    font-size: 25px;
+.description_wrapper {
+    max-width: 600px;
+}
+
+.description__title {
+    font-size: 14px;
     font-family: 'Exo2';
-    font-weight: bold;
-    color: rgb(251, 134, 134);
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.intro-description-subtitle {
-    margin-bottom: 15px;
+.description__subtitle {
+    letter-spacing: 1px;
+    max-width: 490px;
+    margin-bottom: 30px;
     font-size: 35px;
     font-family: 'Exo2';
-    font-weight: 600;
+    font-weight: 500;
     
     /* adding '...' if content doesn't fit */
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
 }
 
-.intro-description-content {
-    width: 60%;
-    letter-spacing: 2px;
-    font-family: 'Exo2';
+.description__subtitle span {
+    color: rgb(255, 109, 109);
+}
+
+.description__content {
+    letter-spacing: 1px;
+    line-height: 1.5;
     color: rgb(132, 132, 132);
+    font-size: 15px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    max-width: 500px;
 }
 
-.intro-image {
-    width: 30%;
-    background-image: url(../landing/sources/bgintro.jpg);
-    background-size: 100% 100%;
+.description__content p:first-child {
+    margin-bottom: 30px;
 }
+
+.intro-container__image {
+    width: 40%;
+}
+
+/* Media queries for intro block styles */
+
+@media  screen and (max-width: 800px) {
+    .intro-container__image {
+        width: 0;
+    }
+
+    .description {
+        width: 100%;
+        background-image: url('../landing/sources/img/bg/bgintro.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .description_wrapper {
+        margin: 0 10px;
+    }
+}
+
+/* Intro styles end */
