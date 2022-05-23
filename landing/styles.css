@@ -23,7 +23,6 @@ html,body {
 
 .header {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -37,6 +36,7 @@ html,body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     max-width: 540px;
 }
 
@@ -50,8 +50,6 @@ html,body {
 }
 
 .header_content__play {
-    width: 59px;
-    height: 59px;
     margin-bottom: 30px;
     opacity: 0.7;
 }
@@ -97,7 +95,7 @@ html,body {
     }
 }
 
-/* Header styles start */
+/* Header styles end */
 
 /* Intro styles start */
 
@@ -184,3 +182,74 @@ html,body {
 }
 
 /* Intro styles end */
+
+/* Features styles start */
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-height: 669px;
+    background-image: url('../landing/sources/img/bg/bgfeatures.jpg');
+    background-size: 100% 100%;
+}
+
+.features_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 400px;
+}
+
+.features_content__title {
+    font-size: 14px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.features_content__subtitle {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 35px;
+    font-family: 'Exo2';
+    font-weight: 500;
+}
+
+.features_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Media queries for intro block styles */
+
+@media  screen and (max-width: 1020px) {
+    .features {
+        background-image: none;
+    }
+}
+
+@media  screen and (max-width: 900px) {
+    .features_content {
+        max-height: 650px;
+    }
+    .features_container {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .features_content__subtitle {
+        margin-bottom: 0;
+    }
+}
+
+/* Features styles end */
