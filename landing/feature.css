@@ -1,4 +1,4 @@
-.features_container__feature {
+.feature {
     font-family: Exo2;
     display: flex;
     align-items: center;
@@ -7,17 +7,19 @@
     text-align: center;
 }
 
-.features_container__feature img {
+.feature__image {
+    width: 67px;
+    height: 67px;
     margin-bottom: 20px;
 }
 
-.features_container__feature h2 {
+.feature__title {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.features_container__feature p {
+.feature__description {
     line-height: 1.5;
     letter-spacing: 1px;
     font-size: 14px;
@@ -26,10 +28,10 @@
 }
 
 @media  screen and (max-width: 900px) {
-    .features_container__feature img {
+    .feature__image {
         margin-top: 20px;
     }
-    .features_container__feature {
+    .feature {
         max-width: 100%;
     }
 }
