@@ -7,6 +7,10 @@
     text-align: center;
 }
 
+.feature:not(:last-child) {
+    margin-right: 15px;
+}
+
 .feature__image {
     width: 67px;
     height: 67px;

@@ -355,6 +355,10 @@ html,body {
     text-align: center;
 }
 
+.co-founder:not(:last-child) {
+    margin-right: 15px;
+}
+
 .co-founder__image {
     width: 80px;
     height: 80px;
@@ -421,5 +425,40 @@ html,body {
 }
 
 /* Media queries for co founders block styles */
+
+@media screen and (max-width: 600px) {
+    .co-founders {
+        background-image: none;
+        height: auto;
+        max-height: none;
+    }
+    .co-founders-container {
+        flex-direction: column;
+        height: auto;
+        max-height: none;
+        margin-top: 20px;
+    }
+    .co-founder {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 30px;
+    }
+    .co-founder:not(:last-child) {
+        margin-right: 0;
+    }
+    .co-founder__image {
+        width: 150px;
+        height: 150px;
+    }
+    .co-founder__name {
+        color: rgb(0, 0, 0);
+    }
+    .partners {
+        flex-direction: column;
+    }
+    .partner__logo {
+        margin-bottom: 30px;
+    }
+}
 
 /* Co Founders styles end */
