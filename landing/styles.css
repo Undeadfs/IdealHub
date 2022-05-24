@@ -232,7 +232,7 @@ html,body {
     justify-content: space-between;
 }
 
-/* Media queries for intro block styles */
+/* Media queries for features block styles */
 
 @media  screen and (max-width: 1020px) {
     .features {
@@ -297,6 +297,8 @@ html,body {
     transform: translate(-50%,-50%);
 }
 
+/* Media queries for description block styles */
+
 @media  screen and (max-width: 800px) {
 
     .images-container {
@@ -323,7 +325,7 @@ html,body {
 
 /* Description styles end */
 
-/* Co Founders styles start */
+/* Co founders styles start */
 
 .co-founders {
     display: flex;
@@ -417,5 +419,7 @@ html,body {
     width: 132px;
     height: 22px;
 }
+
+/* Media queries for co founders block styles */
 
 /* Co Founders styles end */
