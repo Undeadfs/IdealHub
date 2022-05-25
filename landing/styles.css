@@ -88,12 +88,14 @@ html,body {
 /* Media queries for header block styles */
 
 @media screen and (max-width: 1020px) {
+
     .header {
         background-image: url('../landing/sources/img/bg/bgindexmd.jpg');
     }
 }
 
 @media screen and (max-width: 570px) {
+
     .header {
         background-image: url('../landing/sources/img/bg/bgindexsm.jpg');
     }
@@ -169,8 +171,9 @@ html,body {
 /* Media queries for intro block styles */
 
 @media  screen and (max-width: 800px) {
+
     .intro-container__image {
-        width: 0;
+        display: none;
     }
 
     .description {
@@ -235,12 +238,14 @@ html,body {
 /* Media queries for features block styles */
 
 @media  screen and (max-width: 1020px) {
+
     .features {
         background-image: none;
     }
 }
 
 @media  screen and (max-width: 900px) {
+
     .features-container {
         flex-direction: column;
         margin-bottom: 20px;
@@ -251,12 +256,14 @@ html,body {
 }
 
 @media  screen and (max-width: 550px) {
+
     .features {
         max-height: 750px;
     }
 }
 
 @media  screen and (max-width: 420px) {
+
     .features {
         max-height: 850px;
     }
@@ -302,11 +309,11 @@ html,body {
 @media  screen and (max-width: 800px) {
 
     .images-container {
-        width: 0;
+        display: none;
     }
 
     .description-container__image {
-        width: 0;
+        display: none;
     }
     .responsive-container {
         height: 100%;
@@ -428,6 +435,7 @@ html,body {
 /* Media queries for co founders block styles */
 
 @media screen and (max-width: 600px) {
+
     .co-founders {
         background-image: none;
         height: auto;
@@ -529,6 +537,7 @@ html,body {
 }
 
 @media screen and (max-width: 400px) {
+
     .other-features {
         max-height: 410px;
     }
@@ -536,3 +545,116 @@ html,body {
 }
 
 /* Other features styles start */
+
+/* Form styles start */
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    max-height: 370px;
+    background-color: rgb(50, 57, 105);
+}
+
+.form__title {
+    font-size: 13px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    color: rgb(255, 109, 109);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+}
+
+.form__subtitle {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Exo2';
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin: 0 20px 80px 20px;
+}
+
+.form-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form__input {
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 40px;
+    font-family: Exo2;
+    font-size: 13px;
+    background-color: rgb(70, 76, 119);
+    border-radius: 3px;
+    border-style: solid;
+    text-transform: uppercase;
+    border-color: rgb(168,170,188);
+    color: rgb(240, 240, 240);
+    border-width: 1px;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.form__input:first-child {
+    margin-left: 20px;
+}
+
+.form__input:focus {
+    outline: none;
+}
+
+.form__input::placeholder {
+    text-align: start;
+    padding: 15px;
+    color: rgb(240, 240, 240);
+}
+
+.form-trial {
+    position: relative;
+    width: 100%;
+    max-width: 220px;
+    margin-right: 36px;
+}
+
+.form-trial__image {
+    position: absolute;
+    bottom: 105%;
+    left: 0%;
+}
+
+.form-trial__description {
+    position: absolute;
+    bottom: 120%;
+    left: 15%;
+    font-family: 'Exo2';
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+}
+
+.form__button {
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 42px;
+    border-radius: 3px;
+    border-width: 0;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 109, 109);
+}
+
+/* Media queries for form block styles */
+
+@media screen and (max-width: 600px) {
+    
+    
+}
+
+/* Form styles end */
