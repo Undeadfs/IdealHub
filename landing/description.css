@@ -1,0 +1,56 @@
+.description-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    height: 100%;
+    max-height: 569px;
+}
+
+.images-container {
+    position: relative;
+    width: 40%;
+}
+
+.description-container__image {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.laptop {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 90%;
+    transform: translate(-50%,-50%);
+}
+
+/* Media queries for description block styles */
+
+@media  screen and (max-width: 800px) {
+
+    .images-container {
+        display: none;
+    }
+
+    .description-container__image {
+        display: none;
+    }
+    .responsive-container {
+        height: 100%;
+        max-height: 569px;
+    }
+    .responsive-description {
+        width: 100%;
+        height: 100%;
+        max-height: 569px;
+
+        text-align: center;
+        background-image: url('../landing/sources/img/bg/bgdescription.png');
+        background-size: 100% 100%;
+    }
+
+}

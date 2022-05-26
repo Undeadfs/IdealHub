@@ -1,0 +1,95 @@
+.intro-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+    max-height: 650px;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60%;
+}
+
+.description-wrapper {
+    max-width: 600px;
+}
+
+.description__title {
+    font-size: 14px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(255, 109, 109);
+    letter-spacing: 1px;
+}
+
+.description__subtitle {
+    margin-bottom: 30px;
+    max-width: 490px;
+    
+    letter-spacing: 1px;
+    font-size: 35px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    
+    /* adding '...' if content doesn't fit */
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.description__subtitle span {
+    color: rgb(255, 109, 109);
+}
+
+.description__content {
+    max-width: 500px;
+
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Exo2';
+    font-weight: 500;
+    color: rgb(132, 132, 132);
+}
+
+.description__content p:first-child {
+    margin-bottom: 30px;
+}
+
+.intro-container__image {
+    width: 40%;
+}
+
+/* Media queries for intro block styles */
+
+@media  screen and (max-width: 800px) {
+
+    .intro-container__image {
+        display: none;
+    }
+
+    .description {
+        width: 100%;
+
+        background-image: url('../landing/sources/img/bg/bgintro.jpg');
+        background-size: 100% 100%;
+    }
+
+    .description-wrapper {
+        margin: 10px 10px;
+    }
+    .description__title {
+        text-align: center;
+    }
+    .description__subtitle {
+        text-align: center;
+    }
+    .description__content {
+        text-align: center;
+    }
+}
