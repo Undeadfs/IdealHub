@@ -101,6 +101,14 @@ html,body {
     }
 }
 
+@media screen and (max-width: 400px) {
+
+    .header-content__title {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
 /* Header styles end */
 
 /* Intro styles start */
@@ -184,6 +192,15 @@ html,body {
 
     .description-wrapper {
         margin: 10px 10px;
+    }
+    .description__title {
+        text-align: center;
+    }
+    .description__subtitle {
+        text-align: center;
+    }
+    .description__content {
+        text-align: center;
     }
 }
 
@@ -549,7 +566,6 @@ html,body {
 /* Form styles start */
 
 .form {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -620,7 +636,9 @@ html,body {
 .form-trial {
     position: relative;
     width: 100%;
+    height: 100%;
     max-width: 220px;
+    max-height: 42px;
     margin-right: 36px;
 }
 
@@ -632,7 +650,7 @@ html,body {
 
 .form-trial__description {
     position: absolute;
-    bottom: 120%;
+    bottom: 170%;
     left: 15%;
     font-family: 'Exo2';
     font-size: 14px;
@@ -641,9 +659,8 @@ html,body {
 
 .form__button {
     width: 100%;
-    max-width: 220px;
     height: 100%;
-    max-height: 42px;
+    
     border-radius: 3px;
     border-width: 0;
     color: rgb(255, 255, 255);
@@ -653,8 +670,42 @@ html,body {
 /* Media queries for form block styles */
 
 @media screen and (max-width: 600px) {
-    
-    
+
+    .form {
+        max-height: 600px;
+    }
+    .form__subtitle {
+        margin: 0 10px 10px 10px;
+    }
+    .form-wrapper {
+        width: 90%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .form__input {
+        max-width: 100%;
+        max-height: 55px;
+        margin-right: 0;
+    }
+    .form__input:first-child {
+        margin-left: 0;
+    }
+    .form__input:last-of-type {
+        margin-bottom: 25px;
+    }
+    .form-trial {
+        max-width: 100%;
+        max-height: 55px;
+        margin-right: 0;
+    }
+    .form-trial__image {
+        bottom: 110%;
+        left: 0%;
+    }
+    .form-trial__description {
+        bottom: 160%;
+        left: 5%;
+    }
 }
 
 /* Form styles end */
