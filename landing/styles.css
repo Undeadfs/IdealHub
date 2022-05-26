@@ -745,8 +745,8 @@ html,body {
 }
 
 .categories-wrapper {
-    margin-top: 100px;
-    margin-left: 100px;
+    margin-top: 80px;
+    margin-left: 65px;
     display: flex;
     flex-direction: row;
     width: 80%;
@@ -800,6 +800,7 @@ html,body {
 }
 
 .footer__subscription {
+    position: relative;
     width: 100%;
     max-width: 200px;
 }
@@ -836,6 +837,30 @@ html,body {
     padding: 15px;
 }
 
+.mail-button {
+    position: absolute;
+    display: flex;
+    border-radius: 3px;
+    background-color: rgb(255, 109, 109);
+    max-height: 41px;
+    width: 100%;
+    max-width: 42px;
+    height: 100%;
+    top: 26%;
+    left: 100%;
+    align-items: center;
+    justify-content: center;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(168,170,188);
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .list {
     list-style: none;
     letter-spacing: 1px;
@@ -867,15 +892,35 @@ html,body {
     
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 1062px) {
+
+    .mail-button {
+        top: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 812px) {
+
+    .mail-button {
+        top: 41%;
+    }
+    
+}
+
+@media screen and (max-width: 565px) {
 
     .footer {
-        max-height: 500px;
+        max-height: 520px;
+    }
+
+    .mail-button {
+        top: 50%;
     }
 
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 500px) {
 
     .footer {
         max-height: 650px;
