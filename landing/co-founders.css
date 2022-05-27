@@ -14,7 +14,7 @@
 .co-founders-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 
     width: 100%;
     height: 100%;
@@ -105,7 +105,7 @@
 
 /* Media queries for co founders block styles */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     .co-founders {
         height: auto;
