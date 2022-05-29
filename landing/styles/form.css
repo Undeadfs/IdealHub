@@ -45,6 +45,7 @@
     max-width: 220px;
     height: 100%;
     max-height: 40px;
+    box-sizing: border-box;
 
     margin-right: 40px;
     padding-left: 10px;
@@ -107,6 +108,10 @@
     background-color: rgb(255, 109, 109);
 }
 
+.form__button:hover {
+    cursor: pointer;
+}
+
 .form__terms {
     text-align: center;
     letter-spacing: 1px;
@@ -120,6 +125,7 @@
 .terms__link:link {
     color: rgb(132, 132, 132);
 }
+
 .terms__link:visited {
     color: rgb(132, 132, 132);
 }
@@ -131,9 +137,11 @@
     .form {
         max-height: 600px;
     }
+
     .form__subtitle {
         margin: 0 10px 10px 10px;
     }
+
     .form-wrapper {
         flex-direction: column;
         justify-content: space-evenly;
@@ -141,30 +149,39 @@
         width: 90%;
         max-height: 430px;
     }
+
     .form__input {
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
         max-height: 55px;
         margin-right: 0;
     }
+
     .form__input:first-child {
         margin-left: 0;
     }
+
     .form__input:last-of-type {
         margin-bottom: 35px;
     }
+
     .form-trial {
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
         max-height: 55px;
         margin-right: 0;
     }
+
     .form-trial__image {
         bottom: 110%;
         left: 0%;
     }
+
     .form-trial__description {
         bottom: 160%;
         left: 5%;
     }
+
     .form__terms {
         margin-bottom: 20px;
         margin-left: 10px;

@@ -7,8 +7,12 @@
     text-align: center;
 }
 
-.feature:not(:last-child) {
-    margin-right: 15px;
+.feature:first-child {
+    margin-left: 30px;
+}
+
+.feature {
+    margin-right: 30px;
 }
 
 .feature__image {
@@ -31,11 +35,19 @@
     color: rgb(132, 132, 132);
 }
 
-@media  screen and (max-width: 900px) {
-    .feature__image {
-        margin-top: 20px;
-    }
+@media  screen and (max-width: 990px) {
+    
     .feature {
-        max-width: 100%;
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .feature:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .feature:first-child {
+        margin-left: 0;
     }
 }

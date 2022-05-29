@@ -1,25 +1,22 @@
 .intro {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     width: 100%;
     max-height: 650px;
 }
 
-.description {
+.intro__content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     width: 60%;
 }
 
-.description-wrapper {
-    margin-left: 20px;
-    max-width: 600px;
-}
-
-.description__title {
+.intro__title {
     font-size: 14px;
     font-family: 'Exo2';
     font-weight: 500;
@@ -28,7 +25,7 @@
     letter-spacing: 1px;
 }
 
-.description__subtitle {
+.intro__subtitle {
     margin-bottom: 30px;
     max-width: 490px;
     
@@ -47,7 +44,7 @@
     color: rgb(255, 109, 109);
 }
 
-.description__content {
+.intro__description {
     max-width: 500px;
 
     letter-spacing: 1px;
@@ -58,39 +55,41 @@
     color: rgb(132, 132, 132);
 }
 
-.description__content p:first-child {
+.intro__description p:first-child {
     margin-bottom: 30px;
 }
 
-.intro-container__image {
+.intro__image {
     width: 40%;
 }
 
 /* Media queries for intro block styles */
 
-@media  screen and (max-width: 800px) {
+@media  screen and (max-width: 900px) {
 
-    .intro-container__image {
+    .intro {
+        max-height: none;
+    }
+
+    .intro__content {
+        width: 80%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .intro__title {
+        text-align: center;
+    }
+
+    .intro__subtitle {
+        text-align: center;
+    }
+
+    .intro__description {
+        text-align: center;
+    }
+
+    .intro__image {
         display: none;
-    }
-
-    .description {
-        width: 100%;
-
-        background-image: url('../landing/sources/img/bg/bgintro.jpg');
-        background-size: 100% 100%;
-    }
-
-    .description-wrapper {
-        margin: 20px 20px;
-    }
-    .description__title {
-        text-align: center;
-    }
-    .description__subtitle {
-        text-align: center;
-    }
-    .description__content {
-        text-align: center;
     }
 }
